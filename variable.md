@@ -11,7 +11,6 @@ contentFolder=`pwd`
 echo $contentFolder
 contentFolder=$(ls)
 echo $contentFolder
-
 ```
 ## 使用变量
 在变量前加上`$`符，也可以使用`{}`指明变量的名称。
@@ -25,7 +24,6 @@ ${variable}
 skill="music"
 echo $skill
 echo "${skill}er" #输出musicer,如果不适用{}，将会出现skiller变量未定义，输出空行
-
 ```
 ## 删除变量,修改变量和只读变量
 - 删除变量使用`unset`命令
@@ -46,7 +44,6 @@ readonly variable
 echo $variable
 variable="something new"
 echo $variable
-
 ```
 输出:
 ```

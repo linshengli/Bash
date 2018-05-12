@@ -9,6 +9,7 @@ echo "Hello, world!"
 echo "Hello world!"
 ```
 然后使用`echo`内置函数，输出`Hello, world!`。
+
 常见的`Shell`有:
 - `zsh` (/bin/zsh)
 - `csh` (/bin/csh)

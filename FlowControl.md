@@ -109,6 +109,5 @@ do
     let i++
 done
 echo "Sum from 1 to 100 : $sum"
-
 ```
 
