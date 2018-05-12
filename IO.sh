@@ -32,3 +32,8 @@ echo "HH \n" # 输出 HH \n,\n不转义
 echo -e "HH \n" #输出 HH，\n转义
 echo hehe #输出 hehe 等同于 echo "hehe"
 echo hehe\n #输出 hehen
+
+printf "%-12s %-10s %-10s\n" Name  Sex Weight
+printf "%-12s %-10c %-4.2f\n" Leo  M   55.6655
+printf "%-12s %-10c %-4.2f\n" Jack F   65.6655
+printf "%-12s %-10c %-4.2f\n" Mack F   65.78
