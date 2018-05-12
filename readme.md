@@ -10,3 +10,5 @@ Shell脚本是为shell编写的脚本程序。
 
 ## Examples
 
+- [sum](./examples/sum.sh)
+- [guess number](./examples/guess.sh)

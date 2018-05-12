@@ -43,7 +43,8 @@ then
     ...
     commandN
 elif
-        command1
+then
+    command1
     ...
     commandN
 else
