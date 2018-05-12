@@ -2,7 +2,7 @@
 # $RANDOM 系统随机变量 会产生0-32767之间的随机数
 # 我们需要一个0-100之间的随机数
 rand=$(($RANDOM%101))
-echo $rand
+#echo $rand
 time=0
 allow=10
 echo "We have a secret number in range [0-100],can you guess it in $allow times?"
