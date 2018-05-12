@@ -1,0 +1,5 @@
+Name         Sex        Weight    
+Leo          M          55.67
+Jack         F          65.67
+Mack         F          0.00
+./test.sh: 第 9 行: unset: name: 无法取消设定: 只读 variable

@@ -1,3 +1,8 @@
+
+sfsdfName         Sex        Weight    
+Leo          M          55.67
+Jack         F          65.67
+Mack         F          0.00
 #!/bin/bash
 
 printf "%-12s %-10s %-10s\n" Name  Sex Weight

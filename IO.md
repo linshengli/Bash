@@ -75,4 +75,50 @@ printf "%-12s %-10c %-4.2f\n" Mack F   85.6655
 
 ```
 
-## 输入输出重定向
+## 输入输出重定向和管道
+
+### 输入输出重定向
+标准IO是指从键盘输入,从显示器输出。所谓重定向就是指改变标准输入或输出的方向。
+重定向使用符号`<`,`>`来表示。
+重定向输出：
+```
+cat IO.sh > file #将IO.sh重定向到file中
+cat IO.sh >> file #将IO.sh追加到file中
+```
+重定向输入：
+```
+wc -l < IO.sh #将IO.sh 的内容重定向到命令 `wc` 中
+```
+
+**`<` , `>`的方向就是数据流的方向**
+
+如果想要将标准错误输出重定向到文件中，可以如下：
+```
+./test.sh > file 2>&1
+```
+`test.sh`:
+```
+#!/bin/bash
+
+printf "%-12s %-10s %-10s\n" Name  Sex Weight
+printf "%-12s %-10c %-4.2f\n" Leo  M   55.6655
+printf "%-12s %-10c %-4.2f\n" Jack F   65.6655
+printf "%-12s %-10c %-4.2f\n" Mack F 
+name=5
+readonly name
+unset name #会出现错误，unset一个只读变量
+```
+如果某个命令不希望在屏幕上显示输出结果，可以将输出重定向到 `/dev/null`：
+```
+cat file > /dev/null
+```
+
+### 管道
+管道将一个命令的输出重定向到另外一个命令的输入。
+比如：
+```
+cat file | wc -l
+```
+将`cat`的输出，重定向到`wc`命令
+
+
